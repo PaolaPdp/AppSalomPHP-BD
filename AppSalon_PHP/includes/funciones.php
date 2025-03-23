@@ -7,7 +7,7 @@
 
              //consulta SQL
 
-             $sql = "select * from servicios limit 5;";
+             $sql = "select * from servicios limit 7;";
 
              //realizar la consulta
             
@@ -19,12 +19,7 @@
             var_dump(mysqli_fetch_assoc($consulta));
             echo "</pre>";
              
-            //Cerrar la conexion PHP CIERRA AUTOMATICAMENTE EN CASO NO CIERRE LA CONEXION.
-            $resultado= mysqli_close(($db));
-            echo $resultado;
-
-            echo __DIR__;
-
+            
         } catch (\Throwable $th) {
             var_dump($th);
         }

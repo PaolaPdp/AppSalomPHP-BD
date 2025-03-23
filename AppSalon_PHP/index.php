@@ -30,11 +30,9 @@
                 <?php
                     while($servicio = mysqli_fetch_assoc($consulta)) { ?>
                         <div class="servicio">
-                            <p class="nombre_servicio"><?php echo $servicio['nombre']; ?></p>
-                            <p class="precio_servicio"><?php echo $servicio['precio']; ?></p>
-                            
-                        </div>
-                    
+                            <p class="nombre-servicio"><?php echo $servicio['nombre']; ?></p>
+                            <p class="precio-servicio"><?php echo $servicio['precio']; ?></p>                            
+                        </div>                    
                       <?php } ?>
                 </div>
             </div>
